@@ -1,0 +1,701 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+/* header section */
+.container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 1rem;
+  overflow: hidden;
+}
+
+.nav-wrapper {
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.3rem;
+  height: fit-content;
+}
+
+.primary-navigation {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+}
+
+.mobile-nav {
+  display: flex;
+  align-items: center;
+  display: none;
+}
+
+.mobile-nav .checkbox {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+}
+
+.menu-lines {
+  width: 3rem;
+  height: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  right: 2.7rem;
+}
+
+.checkbox:checked~.menu-lines .line:nth-child(1) {
+  transform: rotateZ(45deg);
+  margin-top: .9rem;
+}
+
+.checkbox:checked~.menu-lines .line:nth-child(2) {
+  display: none;
+}
+
+.checkbox:checked~.menu-lines .line:nth-child(3) {
+  transform: rotateZ(-45deg);
+  position: relative;
+  bottom: 1rem;
+}
+
+.menu-lines .line {
+  width: 100%;
+  padding: 3px;
+  background-color: #f6f6f6;
+  transition: all 1s linear;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  position: absolute;
+  top: 4.5rem;
+  left: 0;
+  width: 20rem;
+  padding: 2rem;
+  background-color: rgb(255, 255, 255);
+  border-bottom-right-radius: 4rem;
+  display: none;
+}
+
+.checkbox:checked~.nav-items {
+  display: block;
+}
+
+.nav-items .nav-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.465);
+  padding: 1rem;
+}
+
+.nav-items .nav-item:hover {
+  color: #dc3545;
+  transform: scale(1.1);
+  padding-left: 1rem;
+
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #000;
+
+}
+
+.nav-logo {
+  max-width: 12rem;
+}
+
+.nav-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.primary-navigation .nav-btn:nth-last-child(1) a {
+  background-color: #dc3545;
+  padding: 1.1rem;
+  border-radius: 35px;
+  font-size: 1rem;
+  display: flex;
+  gap: .8rem;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.nav-list .nav-item:nth-last-child(1) {
+  border: 1px solid #fff;
+  padding: 1rem .8rem;
+  border-radius: 35px;
+  font-size: .9rem;
+  word-spacing: 4px;
+}
+
+.nav-list .nav-item i {
+  font-size: 2rem;
+
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+/* hero section */
+/* .hero-section {
+  padding: 0;
+  height: 90vh;
+} */
+
+.hero-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* about section */
+.about-wrapper {
+  padding: 3rem 0;
+  width: 100%;
+  /* height: 95vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.about-top .title {
+  font-size: 3.3rem;
+  font-weight: 400;
+}
+
+.bolt-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.about-top .discription {
+  margin-top: .8rem;
+  color: rgba(255, 255, 255, 0.626);
+}
+
+.about-bottom {
+  display: flex;
+  gap: 2rem;
+  overflow-x: hidden;
+}
+
+.about-bottom .about-card-body {
+  flex: 1;
+  align-self: center;
+  gap: 1.3rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.about-card-body img {
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+  border-radius: .2rem;
+  object-fit: cover;
+  background-color: #fff;
+}
+
+.about-card-body .card-btn {
+  margin-top: 1.5rem;
+  padding: 1rem 3.5rem;
+  border: 1px solid #ffffff63;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #ffffffc3;
+  font-size: 1.2rem;
+}
+
+/* franchises section */
+.frachises-section {
+  background-color: #0F0F0F;
+  padding: 3rem 0;
+
+}
+
+.franchises-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 3rem;
+}
+
+.franchieses-details h2 {
+  font-size: 3.3rem;
+  font-weight: 400;
+}
+
+.franchieses-details .bolt-text {
+  font-weight: 900;
+}
+
+.franchises-wrapper .description {
+  font-size: 1.2rem;
+  margin-top: .8rem;
+  color: rgba(255, 255, 255, 0.626);
+}
+
+.franchise {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.franchise:nth-last-child(2) {
+  flex-direction: row-reverse;
+}
+
+.franchise .left {
+  flex: 1;
+  text-align: start;
+}
+
+.city-name {
+  font-family: sans-serif;
+  color: #ED1A1F;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 1rem;
+  animation: colorVariation 2s ease infinite;
+}
+
+@keyframes colorVariation {
+  0% {
+    color: #ED1A1F;
+  }
+
+  30% {
+    color: #ed1a1e7f;
+  }
+
+  100% {
+    color: #ED1A1F;
+  }
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.location {
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: #ffffffa6;
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: .5rem;
+
+}
+
+.phone-number {
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: #ffffffa6;
+  display: flex;
+  gap: .5rem;
+}
+
+.direction-icon {
+  margin: 3rem 0 0 1rem;
+  padding: 1rem 1.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.526);
+  max-width: fit-content;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  text-transform: capitalize;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.direction-icon i {
+  font-size: 2rem;
+}
+
+.franchise .right {
+  flex: 1;
+}
+
+.franch-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* express franchises section */
+.express-franchises {
+  background-color: #0D0D0D;
+  padding: 4rem;
+}
+
+.express-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.express-wrapper .express-top {
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+.row {
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.card-body {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  margin: 1rem 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  max-width: 26rem;
+  min-width: 15rem;
+  object-fit: cover;
+}
+
+.newfont {
+  font-size: 1rem;
+}
+
+.headingfont {
+  font-size: 1.7rem;
+}
+
+.row:nth-last-child(1) {
+  justify-content: center;
+}
+
+.row:nth-last-child(1) .card-body {
+  max-width: 26rem;
+}
+
+/* village franchise section */
+.village-franchise {
+  max-width: 100%;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.village-franchise .village-details h2 {
+  font-size: 3.3rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.village-wrapper {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}
+
+.village-wrapper .left {
+  flex: 1;
+}
+
+.left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.village-wrapper .right {
+  flex: 1;
+}
+
+.right .headingfont {
+  font-size: 3rem;
+}
+
+.right .newfont {
+  font-size: 1.35rem;
+
+}
+
+.right .direction-icon {
+  font-size: 1.2rem;
+  background-color: #28A745;
+}
+
+@media screen and (max-width : 992px) {
+
+  /* header section */
+  .mobile-nav {
+    display: block;
+  }
+
+  .checkbox {
+    top: 15px;
+  }
+
+  .nav-logo {
+    max-width: 7rem
+  }
+
+  .menu-lines {
+    left: -5px;
+    bottom: 1.8rem;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .primary-navigation .nav-btn:nth-last-child(1) a {
+    padding: 1rem;
+    font-size: .9rem;
+  }
+
+  .menu-lines {
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+
+  .menu-lines .line {
+    padding: 2px;
+  }
+
+  /* about section */
+  .about-top .title {
+    font-size: 2.5rem;
+  }
+
+  .discription {
+    font-size: 1rem;
+  }
+
+  .about-bottom {
+    gap: 1rem;
+  }
+
+  .about-card-body .card-btn {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  /* franchises section */
+  .franchise .left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .city-name {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .location {
+    font-size: .9rem;
+    margin-bottom: 1rem;
+  }
+
+  .phone-number {
+    font-size: .9rem;
+  }
+
+  .direction-icon {
+    margin: 2rem 0 0 1rem;
+    font-size: .8rem;
+  }
+
+  /* express franchises section */
+  .express-franchises {
+    padding: 0;
+  }
+
+  .row {
+    padding: 1rem 0;
+  }
+
+  .express-top h2 {
+    font-size: 2.8rem;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .card-body {
+    padding: 0;
+  }
+
+  .card-body img {
+    width: 100%;
+    height: 100%;
+    min-width: 15rem;
+  }
+
+  /* village franchie */
+  .right .newfont {
+    font-size: 1rem;
+  }
+
+  .right .headingfont {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width : 768px) {
+
+  /* village franchise section */
+  .village-wrapper {
+    max-width: 25rem;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+@media screen and (max-width : 576px) {
+  .nav-logo {
+    max-width: 5rem
+  }
+
+  .primary-navigation .nav-btn:nth-last-child(1) a {
+    padding: .9rem;
+    font-size: .6rem;
+    gap: .3rem;
+  }
+
+  .menu-lines {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .checkbox:checked~.menu-lines .line:nth-child(1) {
+    margin-top: .5rem;
+  }
+
+  /* about section */
+  .about-top .title {
+    font-size: 1.7rem;
+  }
+
+  .discription {
+    font-size: .8rem;
+  }
+
+  .about-bottom {
+    gap: 1rem;
+  }
+
+  .about-card-body img {
+    min-width: 20rem;
+  }
+
+  .about-card-body .card-btn {
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 40px;
+  }
+
+  /* franchises section */
+  .franchieses-details h2 {
+    font-size: 2rem;
+  }
+
+  .franchieses-details .description {
+    font-size: .9rem;
+  }
+
+  .franchise,
+  .franchise:nth-last-child(2) {
+    flex-direction: column;
+  }
+
+  /* express franchise section */
+  .express-top h2 {
+    font-size: 2.3rem;
+  }
+
+  /* village franchie */
+  .village-franchise .village-details h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .right .headingfont {
+    font-size: 1.5rem;
+  }
+
+  .village-wrapper .right .newfont {
+    font-size: .9rem;
+  }
+}
