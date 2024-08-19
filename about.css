@@ -69,3 +69,40 @@
   width: 100%;
   border-radius: 8px;
 }
+/* village franchise */
+.village-details{
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.village-details .heading{
+  font-size: 1.8rem !important;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+.village-details span{
+  font-family: sans-serif;
+}
+/* express franhise section */
+.about-express-top h2{
+  font-size: 1.8rem;
+}
+.about-express .card-body h5{
+  margin-bottom: 1rem;
+  color: #ffffff8b;
+}
+@media screen and (max-width : 764px){
+  .rest-row {
+     flex-direction: column;
+     text-align: center;
+    }
+    .rest-row:nth-last-child(1) .rest-row-left{
+      order: 1;
+    }
+    .rest-row:nth-last-child(1) .rest-row-right{
+      order: 2;
+    }
+    /* franchises section */
+    .franchieses-details h2{
+      font-size: 1.5rem;
+    }
+}
