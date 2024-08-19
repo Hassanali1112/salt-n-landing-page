@@ -8,6 +8,15 @@ h2 {
   font-weight: 500;
 }
 
+a {
+  text-decoration: none;
+  color: #e5e5e5bc;
+}
+
+p {
+  color: #e5e5e5bc;
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -18,14 +27,13 @@ body {
 
 /* header section */
 .container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: auto;
   padding: 0 1rem;
   overflow: hidden;
 }
 
 .nav-wrapper {
-  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -84,7 +92,7 @@ body {
   width: 100%;
   padding: 3px;
   background-color: #f6f6f6;
-  transition: all 1s linear;
+  transition: all .30s linear;
 }
 
 .nav-items {
@@ -488,6 +496,182 @@ body {
   background-color: #28A745;
 }
 
+/* new franchises section */
+.new-franchises-wrapper {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+/* new franchises section */
+.new-top h2 {
+  font-size: 3rem;
+}
+
+.new-top h2 span {
+  font-size: 1.8rem;
+}
+
+.new-bottom {
+  width: 100%;
+}
+
+.new-bottom .row {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.new-body {
+  background-color: #FFFFFF;
+  color: #000;
+  padding: 2rem 1rem;
+  flex: 1;
+  max-width: 26rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: .3rem;
+}
+
+.new-body .icon {
+  background-color: rgba(128, 128, 128, 0.29);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-body .icon i,
+.soon {
+  color: red;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.new-body h2 {
+  font-size: 1.3rem;
+}
+
+.new-body h2 span {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.new-body .address {
+  max-width: 50%;
+  font-weight: 400;
+}
+
+.new-bottom .row:nth-last-child(1) .new-body:nth-child(1) {
+  visibility: hidden;
+}
+
+.new-bottom .row:nth-last-child(1) .new-body:nth-child(3) {
+  visibility: hidden;
+}
+
+/* social feed section */
+.social-wrapper {
+  padding: 2rem 0px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.social-wrapper h2 {
+  font-size: 2rem;
+  font-family: serif;
+}
+
+.socia-cards {
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.social-card {
+  flex: 1;
+  max-width: 25rem;
+}
+
+.social-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* footer section */
+.footer-wrapper {
+  padding: 2rem 0;
+  display: flex;
+  gap: 2rem;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+
+.footer-part {
+  flex: 1;
+  min-width: 12rem;
+  align-self: self-start;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-part:nth-child(1) {
+  flex: 1.4;
+
+}
+
+.footer-part:nth-child(1) .nav-logo {
+  max-width: 10rem;
+}
+
+.footer-part:nth-child(2) .footer-list {
+  list-style: none;
+
+}
+
+.footer-list .footer-item {
+  margin-bottom: 1rem;
+  color: #e5e5e5bc;
+}
+
+.footer-part:nth-child(3),
+.footer-part:nth-child(4) {
+  gap: 1rem;
+}
+
+.footer-part .social-icons {
+  display: flex;
+  gap: 5px;
+}
+
+.footer-part .social-icon {
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ED1C24;
+
+}
+
+
+
+
 @media screen and (max-width : 992px) {
 
   /* header section */
@@ -589,10 +773,6 @@ body {
     font-size: 2.8rem;
   }
 
-  .row {
-    flex-direction: column;
-  }
-
   .card-body {
     padding: 0;
   }
@@ -611,6 +791,19 @@ body {
   .right .headingfont {
     font-size: 2rem;
   }
+
+  /* new franchises section */
+  .new-body .address {
+    max-width: 60%;
+  }
+
+  .new-bottom .row:nth-last-child(1) .new-body:nth-child(1) {
+    display: none;
+  }
+
+  .new-bottom .row:nth-last-child(1) .new-body:nth-child(3) {
+    display: none;
+  }
 }
 
 @media screen and (max-width : 768px) {
@@ -620,6 +813,27 @@ body {
     max-width: 25rem;
     flex-direction: column;
     align-items: flex-end;
+  }
+
+  .village-wrapper .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* new franchises section */
+  .new-top h2 {
+    font-size: 2.3rem;
+  }
+
+  .new-bottom .new-body {
+    min-width: 26rem;
   }
 }
 
@@ -697,5 +911,26 @@ body {
 
   .village-wrapper .right .newfont {
     font-size: .9rem;
+  }
+
+  /* new franchises section */
+  .new-top h2 {
+    font-size: 1.5rem;
+  }
+
+  .new-bottom .new-body {
+    min-width: 20rem;
+  }
+
+  .new-top h2 span {
+    font-size: 1.2rem;
+  }
+
+  /* social feed section */
+
+
+  .social-card {
+    max-width: 8rem;
+    flex-basis: 8rem;
   }
 }
