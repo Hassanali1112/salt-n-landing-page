@@ -38,7 +38,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 1.3rem;
-  height: fit-content;
+  padding: 0 1.5rem;
 }
 
 .primary-navigation {
@@ -134,7 +134,7 @@ body {
 }
 
 .nav-logo {
-  max-width: 12rem;
+  max-width: 10rem;
 }
 
 .nav-logo img {
