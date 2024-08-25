@@ -163,6 +163,7 @@ form select {
   background-color: #ED1C24;
   color: #fff;
   align-self: flex-start;
+  cursor: pointer;
 }
 
 .form-bottom-right {

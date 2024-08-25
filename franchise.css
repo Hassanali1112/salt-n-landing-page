@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.get-franchise-wrapper {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.franchise-heading {
+  font-family: serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.get-franchise-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.input-container {
+  flex: 1;
+  min-width: 48%;
+}
+
+.input-container label {
+  font-size: .8rem;
+  color: rgba(255, 255, 255, 0.603);
+}
+
+.input-container input {
+  margin-top: 1rem;
+  min-width: 100%;
+  padding: .6rem;
+  border-radius: 5px;
+}
+
+.btn-container {
+  max-width: 8rem;
+  min-width: 8rem;
+}
+
+.btn {
+  align-self: flex-start;
+  padding: 1.2rem 1.5rem;
+  text-transform: uppercase;
+  border-radius: 1.5rem;
+  font-size: .7rem;
+  font-weight: 300;
+  background-color: #ED1C24;
+  color: #fff;
+  align-self: flex-start;
+  border-radius: 30px !important;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+  .get-franchise-wrapper {
+    max-width: 564px;
+    margin: 0 auto;
+  }
+
+  .input-container {
+    min-width: 100%;
+  }
+
+  .btn-container {
+    max-width: 8rem;
+    min-width: 8rem;
+  }
+}
