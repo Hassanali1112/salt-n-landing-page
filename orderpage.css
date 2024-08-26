@@ -70,7 +70,8 @@
   display: flex;
   gap: 1rem;
 }
-.fillter .left h4{
+
+.fillter .left h4 {
   font-size: .9rem;
   font-weight: 300;
 }
@@ -88,6 +89,8 @@
 
 .list-item {
   flex: 1;
+  max-width: 300px;
+  min-width: 235px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -122,4 +125,34 @@
   border-radius: 30px;
   background-color: #ED1C24;
   margin: .8rem 0;
+}
+
+@media screen and (max-width: 992px) {
+  .order-wrapper {
+    flex-direction: column;
+  }
+  .nav-btn{
+    display: none;
+  }
+  .order-left {
+    flex: 1;
+    width: 100%;
+  }
+
+  .order-right {
+    flex: 1;
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width:564px) {
+  .menu-list {
+    justify-content: center;
+    border: 1px solid green;
+  }
+
+  .list-item {
+    min-width: 100%;
+  }
 }
