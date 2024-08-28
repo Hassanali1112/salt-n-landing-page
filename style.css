@@ -27,7 +27,7 @@ body {
 
 /* header section */
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
   padding: 0 1rem;
   overflow: hidden;
@@ -37,14 +37,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1.3rem;
+  /* gap: 1.3rem; */
 }
 
 .primary-navigation {
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 30px;
+  gap: .8rem;
 }
 
 .mobile-nav {
@@ -133,7 +133,7 @@ body {
 }
 
 .nav-logo {
-  max-width: 10rem;
+  max-width: 8rem;
 }
 
 .nav-logo img {
@@ -146,17 +146,17 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 30px;
-  font-size: 1rem;
+  gap: 1.2rem;
+  font-size: .8rem;
   text-transform: capitalize;
 }
 
 .primary-navigation .nav-btn:nth-last-child(1) a {
-  background-color: #dc3545;
-  padding: 1.1rem;
+  background-color: #ED1C24;
+  padding: .7rem 1rem;
   border-radius: 35px;
-  font-size: 1rem;
   display: flex;
+  font-size: .8rem;
   gap: .8rem;
   align-items: center;
   text-decoration: none;
@@ -164,18 +164,18 @@ body {
   text-transform: capitalize;
 }
 
+.primary-navigation .nav-btn:nth-last-child(1) a i {
+  font-size: 1.2rem;
+}
+
 .nav-list .nav-item:nth-last-child(1) {
   border: 1px solid #fff;
-  padding: 1rem .8rem;
+  padding: .7rem 1rem;
   border-radius: 35px;
-  font-size: .9rem;
+  font-size: .8rem;
   word-spacing: 4px;
 }
 
-.nav-list .nav-item i {
-  font-size: 2rem;
-
-}
 
 .nav-list a {
   text-decoration: none;
@@ -184,10 +184,6 @@ body {
 }
 
 /* hero section */
-/* .hero-section {
-  padding: 0;
-  height: 90vh;
-} */
 
 .hero-section img {
   width: 100%;
@@ -199,7 +195,6 @@ body {
 .about-wrapper {
   padding: 3rem 0;
   width: 100%;
-  /* height: 95vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -311,7 +306,7 @@ body {
   font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 3px;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   animation: colorVariation 2s ease infinite;
 }
 
@@ -353,7 +348,7 @@ body {
 }
 
 .direction-icon {
-  margin: 3rem 0 0 1rem;
+  margin: 3rem 0 0;
   padding: 1rem 1.8rem;
   border: 1px solid rgba(255, 255, 255, 0.526);
   max-width: fit-content;
@@ -398,34 +393,41 @@ body {
   text-align: center;
 }
 
-.row {
-  padding: 2rem;
+.express-bottom-cards {
+  width: 100%;
   display: flex;
-  gap: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
 }
 
-.card-body {
-  flex: 1;
-  width: 100%;
-  height: 100%;
-  text-align: center;
+.express-bottom-card {
+  max-width: 31%;
+  min-width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+}
+
+.express-bottom-card:nth-child(2) .phone-number,
+.express-bottom-card:nth-child(8) .phone-number {
+  margin-top: 1rem;
+}
+
+.express-bottom-card:nth-child(6) .phone-number,
+.express-bottom-card:nth-child(10) .phone-number {
+  margin-top: .3rem;
 }
 
 .image {
-  margin: 1rem 0;
   width: 100%;
   height: 100%;
-
 }
 
 .image img {
   width: 100%;
   height: 100%;
-  max-width: 26rem;
-  min-width: 15rem;
   object-fit: cover;
 }
 
@@ -434,16 +436,9 @@ body {
 }
 
 .headingfont {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
 }
 
-.row:nth-last-child(1) {
-  justify-content: center;
-}
-
-.row:nth-last-child(1) .card-body {
-  max-width: 26rem;
-}
 
 /* village franchise section */
 .village-franchise {
@@ -505,38 +500,42 @@ body {
   text-align: center;
 }
 
-/* new franchises section */
 .new-top h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  font-weight: 600;
 }
 
-.new-top h2 span {
-  font-size: 1.8rem;
+.new-top .top-express {
+  font-family: serif;
 }
 
-.new-bottom {
+.top-express span {
+  font-size: 1.5rem;
+}
+
+.new-cards {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+
 }
 
-.new-bottom .row {
-  width: 100%;
-  padding: 1rem 0;
-}
-
-.new-body {
-  background-color: #FFFFFF;
-  color: #000;
-  padding: 2rem 1rem;
+.new-card {
   flex: 1;
-  max-width: 26rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  border-radius: .3rem;
+  padding: 2rem 0 1rem 0;
+  min-width: 31%;
+  max-width: 32%;
+  background-color: #fff;
+  color: #000;
+  border-radius: 3px;
 }
 
-.new-body .icon {
+.new-card .icon {
   background-color: rgba(128, 128, 128, 0.29);
   width: 50px;
   height: 50px;
@@ -546,33 +545,35 @@ body {
   align-items: center;
 }
 
-.new-body .icon i,
-.soon {
+.new-card .icon i {
+  color: #D02B2A;
+  font-size: 1.5rem;
+}
+
+.new-card .soon {
   color: red;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
+  font-size: .5rem;
+  padding-top: 1rem;
 }
 
-.new-body h2 {
-  font-size: 1.3rem;
-}
-
-.new-body h2 span {
+.new-card h2 {
   font-size: 1.1rem;
+  font-weight: 600;
+  max-width: 80%;
+}
+
+.new-card h2 span {
+  font-size: .9rem;
   font-weight: 500;
 }
 
-.new-body .address {
+.new-card .address {
+  font-size: 1rem;
+  font-weight: 500;
   max-width: 50%;
-  font-weight: 400;
-}
-
-.new-bottom .row:nth-last-child(1) .new-body:nth-child(1) {
-  visibility: hidden;
-}
-
-.new-bottom .row:nth-last-child(1) .new-body:nth-child(3) {
-  visibility: hidden;
+  line-height: 1.5;
 }
 
 /* social feed section */
@@ -764,22 +765,23 @@ body {
     padding: 0;
   }
 
-  .row {
-    padding: 1rem 0;
-  }
-
   .express-top h2 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
 
-  .card-body {
-    padding: 0;
+  .card-body h2 {
+    font-size: 1rem;
+  }
+
+  .card-body .newfont {
+    font-size: .8rem;
+    background-color: rgb(7, 33, 33);
   }
 
   .card-body img {
     width: 100%;
     height: 100%;
-    min-width: 15rem;
+
   }
 
   /* village franchie */
@@ -791,25 +793,13 @@ body {
     font-size: 2rem;
   }
 
-  /* new franchises section */
-  .new-body .address {
-    max-width: 60%;
-  }
-
-  .new-bottom .row:nth-last-child(1) .new-body:nth-child(1) {
-    display: none;
-  }
-
-  .new-bottom .row:nth-last-child(1) .new-body:nth-child(3) {
-    display: none;
-  }
 }
 
 @media screen and (max-width : 768px) {
 
   /* village franchise section */
   .village-wrapper {
-    max-width: 25rem;
+    padding: 0 1rem;
     flex-direction: column;
     align-items: flex-end;
   }
@@ -826,13 +816,15 @@ body {
     align-items: center;
   }
 
-  /* new franchises section */
-  .new-top h2 {
-    font-size: 2.3rem;
+
+  .direction-icon {
+    margin: 3rem 0 0;
+    padding: 1rem;
+    background-color: #28A745;
   }
 
-  .new-bottom .new-body {
-    min-width: 26rem;
+  .direction-icon i {
+    font-size: 1.5rem;
   }
 }
 
@@ -879,6 +871,7 @@ body {
     border-radius: 40px;
   }
 
+
   /* franchises section */
   .franchieses-details h2 {
     font-size: 2rem;
@@ -917,12 +910,9 @@ body {
     font-size: 1.5rem;
   }
 
-  .new-bottom .new-body {
-    min-width: 20rem;
-  }
-
-  .new-top h2 span {
-    font-size: 1.2rem;
+  .new-card {
+    min-width: 90%;
+    padding-bottom: 2rem;
   }
 
   /* social feed section */
@@ -931,5 +921,13 @@ body {
   .social-card {
     max-width: 8rem;
     flex-basis: 8rem;
+  }
+
+  .express-bottom-card {
+    min-width: 90%;
+  }
+
+  .express-bottom-card .newfont {
+    max-width: 90%;
   }
 }
