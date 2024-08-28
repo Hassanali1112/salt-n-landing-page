@@ -204,8 +204,9 @@ body {
 }
 
 .about-top .title {
-  font-size: 3.3rem;
+  font-size: 2rem;
   font-weight: 400;
+
 }
 
 .bolt-text {
@@ -217,11 +218,13 @@ body {
 .about-top .discription {
   margin-top: .8rem;
   color: rgba(255, 255, 255, 0.626);
+  font-size: .8rem;
 }
 
 .about-bottom {
   display: flex;
-  gap: 2rem;
+  justify-content: center;
+  gap: 1rem;
   overflow-x: hidden;
 }
 
@@ -234,9 +237,9 @@ body {
 }
 
 .about-card-body img {
-  padding: 2rem;
-  width: 100%;
-  height: 100%;
+  padding: 1rem;
+  max-width: 12rem;
+  /* height: 100%; */
   border-radius: .2rem;
   object-fit: cover;
   background-color: #fff;
@@ -244,12 +247,12 @@ body {
 
 .about-card-body .card-btn {
   margin-top: 1.5rem;
-  padding: 1rem 3.5rem;
+  padding: .8rem 2rem;
   border: 1px solid #ffffff63;
   border-radius: 30px;
   background-color: transparent;
   color: #ffffffc3;
-  font-size: 1.2rem;
+  font-size: .8rem;
 }
 
 /* franchises section */
@@ -265,11 +268,11 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .franchieses-details h2 {
-  font-size: 3.3rem;
+  font-size: 2.5rem;
   font-weight: 400;
 }
 
@@ -278,7 +281,7 @@ body {
 }
 
 .franchises-wrapper .description {
-  font-size: 1.2rem;
+  font-size: .8rem;
   margin-top: .8rem;
   color: rgba(255, 255, 255, 0.626);
 }
@@ -288,7 +291,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .franchise:nth-last-child(2) {
@@ -298,15 +301,18 @@ body {
 .franchise .left {
   flex: 1;
   text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
 }
 
 .city-name {
   font-family: sans-serif;
   color: #ED1A1F;
-  font-size: 1.3rem;
+  font-size: .8rem;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 3px;
-  margin: 1rem 0;
   animation: colorVariation 2s ease infinite;
 }
 
@@ -325,22 +331,20 @@ body {
 }
 
 .heading {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .location {
-  font-size: 1.35rem;
+  font-size: .7rem;
   font-weight: 400;
   color: #ffffffa6;
-  margin-bottom: 1.2rem;
   display: flex;
   gap: .5rem;
 
 }
 
 .phone-number {
-  font-size: 1.35rem;
+  font-size: .7rem;
   font-weight: 400;
   color: #ffffffa6;
   display: flex;
@@ -348,11 +352,11 @@ body {
 }
 
 .direction-icon {
-  margin: 3rem 0 0;
-  padding: 1rem 1.8rem;
+  margin: 1rem 0 0;
+  padding: .5rem 1rem;
   border: 1px solid rgba(255, 255, 255, 0.526);
   max-width: fit-content;
-  font-size: 1rem;
+  font-size: .7rem;
   display: flex;
   align-items: center;
   gap: .5rem;
@@ -362,7 +366,7 @@ body {
 }
 
 .direction-icon i {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .franchise .right {
@@ -378,10 +382,12 @@ body {
 /* express franchises section */
 .express-franchises {
   background-color: #0D0D0D;
-  padding: 4rem;
+
+
 }
 
 .express-wrapper {
+  padding: 2rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -389,8 +395,10 @@ body {
 }
 
 .express-wrapper .express-top {
-  font-size: 2.8rem;
+  font-size: 1.5rem;
   text-align: center;
+  font-family: serif;
+  font-weight: 500;
 }
 
 .express-bottom-cards {
@@ -398,6 +406,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  row-gap: 2rem;
   justify-content: center;
 }
 
@@ -408,6 +417,12 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  gap: 1rem;
+}
+
+
+.express-bottom-card .city-name {
+  font-size: 0.7rem;
 }
 
 .express-bottom-card:nth-child(2) .phone-number,
@@ -420,40 +435,39 @@ body {
   margin-top: .3rem;
 }
 
-.image {
-  width: 100%;
-  height: 100%;
+.express-bottom-card .image {
+  max-height: 230px;
 }
 
-.image img {
+.express-bottom-card .image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 .newfont {
-  font-size: 1rem;
+  font-size: .7rem;
 }
 
 .headingfont {
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 
 /* village franchise section */
 .village-franchise {
   max-width: 100%;
-  padding: 3rem 0;
+  padding: 2rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .village-franchise .village-details h2 {
-  font-size: 3.3rem;
-  line-height: 1;
+  font-size: 2.5rem;
   text-align: center;
+  font-family: serif;
 }
 
 .village-wrapper {
@@ -474,19 +488,21 @@ body {
 
 .village-wrapper .right {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: .5rem;
 }
 
 .right .headingfont {
-  font-size: 3rem;
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
 }
 
-.right .newfont {
-  font-size: 1.35rem;
 
-}
 
 .right .direction-icon {
-  font-size: 1.2rem;
+  margin-top: 2rem;
   background-color: #28A745;
 }
 
@@ -590,6 +606,7 @@ body {
 .social-wrapper h2 {
   font-size: 2rem;
   font-family: serif;
+  color: #212529;
 }
 
 .socia-cards {
@@ -612,12 +629,18 @@ body {
 }
 
 /* footer section */
+.footer {
+  border-bottom: 1px solid #eeeeee13;
+  margin: 0 1rem;
+}
+
 .footer-wrapper {
-  padding: 2rem 0;
+  padding: 3rem 0;
   display: flex;
   gap: 2rem;
   flex-shrink: 0;
   flex-wrap: wrap;
+
 }
 
 .footer-part {
@@ -630,16 +653,31 @@ body {
 }
 
 .footer-part:nth-child(1) {
-  flex: 1.4;
+  flex: 1.3;
+}
 
+.footer-part:nth-child(1) p {
+  font-size: .74rem;
+}
+
+.footer-part:nth-child(1) .terms-privacy {
+  font-size: .7rem;
+  color: #ffffff81;
 }
 
 .footer-part:nth-child(1) .nav-logo {
-  max-width: 10rem;
+  max-width: 8rem;
+}
+
+.footer-part:nth-child(2) h3 {
+  font-size: .85rem;
+  font-family: serif;
 }
 
 .footer-part:nth-child(2) .footer-list {
   list-style: none;
+  font-size: .8rem;
+  text-transform: capitalize;
 
 }
 
@@ -653,14 +691,23 @@ body {
   gap: 1rem;
 }
 
+.footer-part:nth-child(3) h3 {
+  font-size: .85rem;
+  font-family: serif;
+}
+
+.footer-part:nth-child(3) p {
+  font-size: .8rem;
+}
+
 .footer-part .social-icons {
   display: flex;
   gap: 5px;
 }
 
 .footer-part .social-icon {
-  width: 2.3rem;
-  height: 2.3rem;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -668,7 +715,14 @@ body {
   background-color: #ED1C24;
 
 }
-
+.copyright{
+  display: flex;
+  padding: .5rem 0;
+}
+.copyright p{
+  flex: 1;
+  font-size: .7rem;
+}
 
 
 
